@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:my_app/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -38,7 +39,7 @@ class LoginPage extends StatelessWidget {
                   ),
                    SizedBox(height: 20.0),
                    ElevatedButton(onPressed: (){
-                     print("Hello flutter");
+                    Navigator.pushNamed(context, AppRoutes.enpensePage);
                    }, child: Text("Login"))
                 ],
               )
@@ -49,3 +50,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+
+
+
